@@ -1,0 +1,21 @@
+<p>Alex-producto works!</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+         </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor=" let producto of productos " >
+            <td>{{producto.id}} </td>
+            <td>{{producto.descripcion}} </td>
+            <td>{{producto.precio}} </td>
+            <td>{{producto.stock}} </td>
+        </tr>
+    </tbody>
+</table>
